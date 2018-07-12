@@ -4,8 +4,8 @@ Spring application for fleet management of an Airline
 
 Done:
 
-- **_ Use Mustache for front-end styling_ ** 
-- **_ Quantity of aiports can be changed_ **
+- `` Use Mustache for front-end styling_ ``
+- `` Quantity of aiports can be changed_ ``
 
 
 
