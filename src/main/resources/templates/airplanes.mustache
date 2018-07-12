@@ -1,0 +1,52 @@
+{{> header}}
+
+<!-- Page Content -->
+<div class="container-fluid">
+    <h1 class="mt-5">Airplane management</h1>
+    <i class="fa fa-plus btn btn-success" id="addBtn"></i>
+    <table id="dataTable" class="display table-hover">
+        <thead>
+        <tr>
+            <th>Airplane ID</th>
+            <th>Airplane name</th>
+            <th>Fuel</th>
+            <th>Location</th>
+            <th>Options</th>
+        </tr>
+        </thead>
+    </table>
+
+    <div class="modal fade" id="modal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" onclick="deselect()" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title" id="modal-title">Title</h3>
+                </div>
+                <div class="modal-body">
+                    <form id="modalForm" enctype='text/plain'>
+                        Airplane id:<br>
+                        <input type='text' class="form-control" name='id' id="id"><br>
+                        Airplane name:<br>
+                        <input type='text' class="form-control" name='name' id="name"><br>
+                        Location:<br>
+                        <input type='text' class="form-control" name='airport' id="airport"><br>
+                        Fuel:<br>
+                        <input type='text' class="form-control" name='fuel' id="fuel"><br>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btnsubmit">Submit</button>
+                    <!--<button type="button" class="btn btn-primary" id="btnNewEntry">Create</button>-->
+                    <a href="#" id="confirmbutton" data-title="Are you sure" data-trigger="focus" data-toggle="clickover" data-placement="top" class="btn btn-danger">Delete</a>
+                    <button type="button" class="btn btn-default" id="btnclose" onclick="deselect()" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- /.container -->
+{{> footer}}
